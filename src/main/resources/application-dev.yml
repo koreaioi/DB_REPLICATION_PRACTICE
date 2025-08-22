@@ -10,7 +10,7 @@ spring:
     slave:
       hikari:
         username: ${DB_SLAVE_USERNAME}
-#        password: ${DB_SLAVE_PASSWORD}
+        password: ${DB_SLAVE_PASSWORD}
         driver-class-name: com.mysql.cj.jdbc.Driver
         jdbc-url: ${DB_SLAVE_URL}
   jpa:
