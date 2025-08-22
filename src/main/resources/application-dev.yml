@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    master:
+      hikari:
+        username: ${DB_MASTER_USERNAME}
+        password: ${DB_MASTER_PASSWORD}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: ${DB_MASTER_URL}
+#        jdbc-url: jdbc:mysql://<master? IP??:??>/db?serverTimezone=Asia/Seoul
+    slave:
+      hikari:
+        username: ${DB_SLAVE_USERNAME}
+#        password: ${DB_SLAVE_PASSWORD}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: ${DB_SLAVE_URL}
+  jpa:
+    hibernate:
+      ddl-auto: update
